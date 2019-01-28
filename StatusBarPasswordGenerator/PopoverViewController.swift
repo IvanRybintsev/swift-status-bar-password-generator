@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class PopoverViewController: NSViewController {
+class PopoverViewController: NSViewController, NSTextFieldDelegate {
 
     class func loadFromNIB() -> NSViewController{
         let storyboard = NSStoryboard(name: "Main", bundle: nil)
@@ -25,6 +25,7 @@ class PopoverViewController: NSViewController {
     @IBOutlet weak var statusLabel: NSTextField!
     @IBOutlet weak var specials: NSButton!
     @IBOutlet weak var exitButton: NSButton!
+    @IBOutlet weak var stepper: NSStepper!
     
     @IBAction func generate(_ sender: Any) {
         var str = ""
@@ -67,6 +68,12 @@ class PopoverViewController: NSViewController {
             statusLabel.stringValue = "Symbols empty."
         }
         
+    }
+    
+    func controlTextDidChange(_ obj: Notification) {
+        if let field = obj.object as! NSTextField?{
+            stepper.takeIntegerValueFrom(field)
+        }
     }
     
     @objc func closeApp(sender:AnyObject){

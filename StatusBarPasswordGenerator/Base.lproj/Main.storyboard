@@ -750,7 +750,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-Vo-po4">
-                                <rect key="frame" x="130" y="99" width="50" height="22"/>
+                                <rect key="frame" x="130" y="99" width="35" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="10" drawsBackground="YES" id="aZi-pl-MIb">
                                     <numberFormatter key="formatter" formatterBehavior="default10_4" localizesFormat="NO" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="pgK-1U-UaI">
                                         <real key="minimum" value="4"/>
@@ -760,6 +760,9 @@
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
+                                <connections>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="YwQ-iS-6jA"/>
+                                </connections>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BtC-0U-7qG">
                                 <rect key="frame" x="14" y="63" width="172" height="32"/>
@@ -806,6 +809,13 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iF9-qj-iKC">
+                                <rect key="frame" x="164" y="97" width="19" height="27"/>
+                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="4" maxValue="20" doubleValue="4" autorepeat="NO" id="yMn-MZ-63i"/>
+                                <connections>
+                                    <action selector="takeIntegerValueFrom:" target="aZi-pl-MIb" id="A8u-XG-WbU"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <constraints>
                             <constraint firstItem="cGI-2e-a6m" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="0ed-AN-ymj"/>
@@ -819,9 +829,12 @@
                             <constraint firstAttribute="trailing" secondItem="PYJ-Xa-Qhx" secondAttribute="trailing" constant="20" id="FEd-EK-N4e"/>
                             <constraint firstAttribute="trailing" secondItem="J8q-A2-URd" secondAttribute="trailing" constant="20" id="GbY-yQ-2M5"/>
                             <constraint firstAttribute="trailing" secondItem="yfo-93-7Zz" secondAttribute="trailing" constant="20" id="Ip5-Or-Ped"/>
+                            <constraint firstAttribute="trailing" secondItem="ShI-Vo-po4" secondAttribute="trailing" constant="35" id="Jja-q9-K3U"/>
+                            <constraint firstItem="iF9-qj-iKC" firstAttribute="centerY" secondItem="ShI-Vo-po4" secondAttribute="centerY" id="KnO-79-kzJ"/>
                             <constraint firstItem="bT1-mh-ap7" firstAttribute="top" secondItem="yfo-93-7Zz" secondAttribute="bottom" constant="8" id="L9O-MF-A4i"/>
                             <constraint firstItem="PYJ-Xa-Qhx" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="PXk-Hh-gxL"/>
                             <constraint firstItem="J8q-A2-URd" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="SRO-Cm-cfN"/>
+                            <constraint firstAttribute="trailing" secondItem="iF9-qj-iKC" secondAttribute="trailing" constant="20" id="WNE-he-Bwl"/>
                             <constraint firstAttribute="trailing" secondItem="cGI-2e-a6m" secondAttribute="trailing" constant="20" id="Yvj-IF-Oxc"/>
                             <constraint firstItem="ilq-Ca-8nO" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="ZL3-jy-d43"/>
                             <constraint firstItem="J8q-A2-URd" firstAttribute="top" secondItem="bT1-mh-ap7" secondAttribute="bottom" constant="8" id="aGs-9z-Og8"/>
@@ -839,7 +852,6 @@
                             <constraint firstAttribute="trailing" secondItem="TEf-JN-vzh" secondAttribute="trailing" id="qvP-eZ-YrK"/>
                             <constraint firstAttribute="trailing" secondItem="mei-0k-AQ3" secondAttribute="trailing" constant="20" id="r27-QK-BZy"/>
                             <constraint firstItem="cGI-2e-a6m" firstAttribute="top" secondItem="BtC-0U-7qG" secondAttribute="bottom" constant="8" id="sfZ-Hg-4Px"/>
-                            <constraint firstAttribute="trailing" secondItem="ShI-Vo-po4" secondAttribute="trailing" constant="20" id="ujk-0X-w2b"/>
                             <constraint firstItem="yfo-93-7Zz" firstAttribute="top" secondItem="mei-0k-AQ3" secondAttribute="bottom" constant="8" id="vEI-FB-pjg"/>
                         </constraints>
                     </view>
@@ -852,6 +864,7 @@
                         <outlet property="resultField" destination="cGI-2e-a6m" id="KsP-yR-SDw"/>
                         <outlet property="specials" destination="J8q-A2-URd" id="s2p-uy-gup"/>
                         <outlet property="statusLabel" destination="PYJ-Xa-Qhx" id="k3U-M3-K5x"/>
+                        <outlet property="stepper" destination="iF9-qj-iKC" id="sih-UA-aP4"/>
                         <outlet property="upperCase" destination="mei-0k-AQ3" id="P5b-eL-YAN"/>
                     </connections>
                 </viewController>
