@@ -11,6 +11,8 @@
 		CE70284321FEAB9A00515861 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70284221FEAB9A00515861 /* ViewController.swift */; };
 		CE70284521FEAB9C00515861 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE70284421FEAB9C00515861 /* Assets.xcassets */; };
 		CE70284821FEAB9C00515861 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE70284621FEAB9C00515861 /* Main.storyboard */; };
+		CE70285121FEAD9800515861 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70285021FEAD9800515861 /* EventMonitor.swift */; };
+		CE70285321FEB18F00515861 /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70285221FEB18F00515861 /* PopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		CE70284721FEAB9C00515861 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE70284921FEAB9C00515861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE70284A21FEAB9C00515861 /* StatusBarPasswordGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StatusBarPasswordGenerator.entitlements; sourceTree = "<group>"; };
+		CE70285021FEAD9800515861 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		CE70285221FEB18F00515861 /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				CE70284621FEAB9C00515861 /* Main.storyboard */,
 				CE70284921FEAB9C00515861 /* Info.plist */,
 				CE70284A21FEAB9C00515861 /* StatusBarPasswordGenerator.entitlements */,
+				CE70285021FEAD9800515861 /* EventMonitor.swift */,
+				CE70285221FEB18F00515861 /* PopoverViewController.swift */,
 			);
 			path = StatusBarPasswordGenerator;
 			sourceTree = "<group>";
@@ -133,6 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE70285321FEB18F00515861 /* PopoverViewController.swift in Sources */,
+				CE70285121FEAD9800515861 /* EventMonitor.swift in Sources */,
 				CE70284321FEAB9A00515861 /* ViewController.swift in Sources */,
 				CE70284121FEAB9A00515861 /* AppDelegate.swift in Sources */,
 			);
