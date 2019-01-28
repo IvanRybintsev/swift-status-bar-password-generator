@@ -766,7 +766,7 @@
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BtC-0U-7qG">
                                 <rect key="frame" x="14" y="63" width="172" height="32"/>
-                                <buttonCell key="cell" type="push" title="Generate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" sound="Tink" inset="2" id="YCv-vK-cEq">
+                                <buttonCell key="cell" type="push" title="Generate" bezelStyle="rounded" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" sound="Tink" inset="2" id="YCv-vK-cEq">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -811,7 +811,7 @@
                             </textField>
                             <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iF9-qj-iKC">
                                 <rect key="frame" x="164" y="97" width="19" height="27"/>
-                                <stepperCell key="cell" continuous="YES" alignment="left" minValue="4" maxValue="20" doubleValue="4" autorepeat="NO" id="yMn-MZ-63i"/>
+                                <stepperCell key="cell" alignment="left" minValue="4" maxValue="20" doubleValue="4" autorepeat="NO" id="yMn-MZ-63i"/>
                                 <connections>
                                     <action selector="takeIntegerValueFrom:" target="aZi-pl-MIb" id="A8u-XG-WbU"/>
                                 </connections>

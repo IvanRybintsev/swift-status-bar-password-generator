@@ -18,7 +18,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         if let button = statusItem.button{
-            button.title = "🔐"
+            let icon = NSImage(named: "AppIcon")
+            button.image = icon
+            button.imageScaling = .scaleProportionallyUpOrDown
             button.action = #selector(self.togglePopover(sender:))
         }
         popover.contentViewController = PopoverViewController.loadFromNIB()
