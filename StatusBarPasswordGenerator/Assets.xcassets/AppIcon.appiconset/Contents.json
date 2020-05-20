@@ -1,62 +1,68 @@
 {
   "images" : [
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "Artboard@16.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "passgenicon-33.png",
+      "filename" : "Artboard@32-1.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "passgenicon-32.png",
+      "filename" : "Artboard@32.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "passgenicon-65.png",
+      "filename" : "Artboard@64-1.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "passgenicon-128.png",
+      "filename" : "Artboard@128.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "passgenicon-257.png",
+      "filename" : "Artboard@256-1.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "passgenicon-256.png",
+      "filename" : "Artboard@256.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "passgenicon-1.png",
+      "filename" : "Artboard@512-1.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "passgenicon.png",
+      "filename" : "Artboard@512.png",
       "scale" : "1x"
     },
     {
       "idiom" : "mac",
       "size" : "512x512",
       "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Artboard@64.png",
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
